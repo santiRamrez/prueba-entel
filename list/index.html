@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/setting.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/table.css" />
+    <title>LIST - RENT A CAR</title>
+  </head>
+  <body>
+    <header>
+      <div class="cont-center">
+        <div class="cont-logo">
+          <img src="../img/logo.svg" alt="Logo Entel" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Formulario</a></li>
+            <li><a href="/list">Lista Formulario</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>RUT Vendedor</th>
+          <th>Patente Vehículo</th>
+          <th>Marca Vehículo</th>
+          <th>Modelo Vehículo</th>
+          <th>Color Vehículo</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <!--Template to put data on the DOM-->
+    <template id="crudTemplate">
+      <tr>
+        <td class="name">Samuel</td>
+        <td class="rut">3000</td>
+        <td class="registrationCar">3000</td>
+        <td class="brandCar">Audi</td>
+        <td class="modelCar">Modelo y</td>
+        <td class="colorCar">Negro</td>
+        <td>
+          <div class="delete">
+            <img class="delete-btn" src="../img/Eliminar.svg" alt="delete" />
+          </div>
+        </td>
+      </tr>
+    </template>
+    <script src="../scripts/showData.js"></script>
+    <script src="../scripts/deleteData.js"></script>
+  </body>
+</html>
